@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +17,53 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data provided by Marvel. © 2014 Marvel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeG-dU-HcM">
+                                <rect key="frame" x="20" y="560" width="560" height="20"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" red="0.31372549019607843" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Marvel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="W6T-cd-dVk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="154"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Made by: Diego Llamas Velasco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOh-De-s8t">
+                                <rect key="frame" x="0.0" y="162" width="600" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="eE1-71-ell"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eE1-71-ell"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="IeG-dU-HcM" secondAttribute="bottom" constant="20" id="0dJ-GB-CuP"/>
+                            <constraint firstAttribute="trailing" secondItem="pOh-De-s8t" secondAttribute="trailing" id="4KT-EP-lP0"/>
+                            <constraint firstItem="pOh-De-s8t" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="5g0-yu-b3s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IeG-dU-HcM" secondAttribute="trailing" constant="126" id="6ak-88-edC"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="IeG-dU-HcM" secondAttribute="bottom" constant="20" id="IEf-CV-vm2"/>
+                            <constraint firstItem="W6T-cd-dVk" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Mkn-Zj-Uqg"/>
+                            <constraint firstItem="IeG-dU-HcM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="126" id="T8I-v2-PW9"/>
+                            <constraint firstAttribute="trailing" secondItem="IeG-dU-HcM" secondAttribute="trailing" constant="20" id="TvV-nd-tcW"/>
+                            <constraint firstItem="pOh-De-s8t" firstAttribute="top" secondItem="W6T-cd-dVk" secondAttribute="bottom" constant="8" id="UVU-dl-Kt6"/>
+                            <constraint firstItem="W6T-cd-dVk" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="XGw-MT-T3q"/>
+                            <constraint firstAttribute="trailing" secondItem="W6T-cd-dVk" secondAttribute="trailing" id="chA-iX-HEg"/>
+                            <constraint firstItem="IeG-dU-HcM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="r4n-Bo-R6V"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6ak-88-edC"/>
+                                <exclude reference="T8I-v2-PW9"/>
+                                <exclude reference="0dJ-GB-CuP"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +71,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Marvel_logo" width="411" height="186"/>
+    </resources>
 </document>

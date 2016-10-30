@@ -24,11 +24,11 @@
                                 <color key="textColor" red="0.31372549019607843" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Marvel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="W6T-cd-dVk">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="154"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="W6T-cd-dVk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="186"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Made by: Diego Llamas Velasco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOh-De-s8t">
-                                <rect key="frame" x="0.0" y="162" width="600" height="103"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by: Diego Llamas Velasco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOh-De-s8t">
+                                <rect key="frame" x="0.0" y="194" width="600" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="103" id="eE1-71-ell"/>
                                 </constraints>

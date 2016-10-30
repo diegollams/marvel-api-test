@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        MarvelApiUtil.Constansts.BASE_URL
         // Do any additional setup after loading the view, typically from a nib.
     }
 
